@@ -15,3 +15,8 @@ total_summary <- Suspension_coils %>% summarize(Mean = mean(PSI), Median = media
 
 lot_summary <- Suspension_coils %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI), Median = median(PSI),
                                                                 Variance = var(PSI), SD = sd(PSI), .groups = 'keep')
+t.test(Suspension_coils$PSI, mu = 1500)
+
+t.test(subset(Suspension_coils$PSI, Suspension_coils$Manufacturing_Lot == 'Lot1'), mu = 1500)
+t.test(subset(Suspension_coils$PSI, Suspension_coils$Manufacturing_Lot == 'Lot2'), mu = 1500)
+t.test(subset(Suspension_coils$PSI, Suspension_coils$Manufacturing_Lot == 'Lot3'), mu = 1500)
