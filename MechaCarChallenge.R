@@ -11,7 +11,7 @@ summary(linear_analysis1)
 Suspension_coils <- read.csv('Suspension_Coil.csv', check.names = F, stringsAsFactors = F)
 
 total_summary <- Suspension_coils %>% summarize(Mean = mean(PSI), Median = median(PSI),
-                                                Variance = var(PSI), SD = sd(PSI))
+                                                Variance = var(PSI), SD = sd(PSI), .groups = 'keep')
 
 lot_summary <- Suspension_coils %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI), Median = median(PSI),
-                                                                             Variance = var(PSI), SD = sd(PSI))
+                                                                Variance = var(PSI), SD = sd(PSI), .groups = 'keep')
