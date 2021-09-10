@@ -81,6 +81,9 @@ The first manufacturing lot isn't also statistically significant from the popula
 ## Study Design: MechaCar vs Competition
 
 I would start this study by analyzing what key metrics I can utilize and how I can extract those key metrics. Since I will be building a product for my clients I will start by conducting both qualitative and quantitative surveys. I will research historical data to see what key metrics the manufacturing company analyzed and how those key metrics played a role in building efficiency and customer retention. I will make sure this analysis is conducted according to a random sample. Since I will have multiple variables I will build a multiple regression model. In this case, my null and alternative hypothesis would be as follow:
+
+
+
 Ho: α0 = α1 = α2 = ... = αn = 0
 
 
